@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página con Estrellas y Nave Espacial</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Vinculado a tu archivo CSS -->
+</head>
+<body>
+    <div class="stars">
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+    </div>
+
+    <header>
+        <h1>Folder Pariona Ramos</h1>
+    </header>
+
+    <!-- Imagen Circular en la parte superior -->
+    <div class="blog-section">
+        <img src="Imagenes/guitar.jpg" alt="Blog Personal" class="profile-pic">
+        <p>Bienvenido a mi pagina web, Soy Pariona Ramos Deyvid Alexander y aqui expongo mis proyectos y repositorios de GitHub.</p>
+    </div>
+
+    <!-- Iconos de Redes Sociales -->
+    <div class="social-icons">
+        <a href="https://facebook.com/" target="_blank">
+            <img src="Imagenes/Logo_de_Facebook.png " alt="Facebook">
+        </a>
+        <a href="https://twitter.com/" target="_blank">
+            <img src="Imagenes/twiter.png" alt="Twitter">
+        </a>
+    </div>
+    
+    <main>
+        <div class="github-section">
+            <h2>Mis Repositorios de GitHub</h2>
+            <p><a href="https://github.com/saintdeyb321/Semana-1" target="_blank"><button>Proyecto 1</button></a></p>
+            <p><a href="https://github.com/saintdeyb321/Semana-2" target="_blank"><button>Proyecto 2</button></a></p>
+            <p><a href="https://github.com/saintdeyb321/Semana-3" target="_blank"><button>Proyecto 3</button></a></p>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 UPLA Huancayo.</p>
+    </footer>
+
+    <script>
+        // Generar estrellas dinámicamente
+        const starsContainer = document.querySelector('.stars');
+        const numberOfStars = 100;
+
+        for (let i = 0; i < numberOfStars; i++) {
+            const star = document.createElement('div');
+            star.classList.add('star');
+            star.style.top = Math.random() * 100 + '%';
+            star.style.left = Math.random() * 100 + '%';
+            star.style.width = Math.random() * 3 + 'px';
+            star.style.height = star.style.width;
+            starsContainer.appendChild(star);
+        }
+    </script>
+</body>
+</html>
